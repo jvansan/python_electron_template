@@ -8,4 +8,4 @@ def hello():
     return "<h1>Hello World from Flask!</h1>"
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port=55556)

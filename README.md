@@ -5,7 +5,8 @@ A very simple starter project for running Python from an Electron App.
 The example app runs two Python script: 
 1) `hello.py` which prints the result in the console. 
 2) `flask_app.py` which creates a flask development server at
-port 5000 and serves a Hello World homepage.
+port 55556 (one which you will probably never use) and serves a 
+Hello World homepage.
 
 ### Getting Started
 
