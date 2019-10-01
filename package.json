@@ -1,0 +1,23 @@
+{
+  "name": "python_electron_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Main.ts",
+  "scripts": {
+    "build": "tsc && copyfiles -u 1 app/**/*.html app/**/*.css app/**/*.py dist/",
+    "start": "electron dist/App.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "python",
+    "electron",
+    "template"
+  ],
+  "author": "jvansan",
+  "license": "ISC",
+  "devDependencies": {
+    "copyfiles": "^2.1.1",
+    "electron": "^6.0.10",
+    "python-shell": "^1.0.8"
+  }
+}
