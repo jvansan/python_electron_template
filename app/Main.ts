@@ -14,6 +14,12 @@ export default class Main {
         })
     }
 
+    private static startFlask() {
+        PythonShell.run(`${__dirname}/flask_app.py`, null, (err, res) => {
+            if (err) throw err
+        })
+    }
+ 
     // Method for quitting when all windows al closed
     private static onWindowAllClosed() {
         // On macOS it is common for Apps to stay open until explicitly
@@ -41,6 +47,7 @@ export default class Main {
         Main.mainWindow.on('closed', Main.onClose)
         // Explicitly run Python script
         Main.runPython()
+        Main.startFlask()
     }
 
     static main(app: Electron.App, browserWindow: typeof BrowserWindow) {

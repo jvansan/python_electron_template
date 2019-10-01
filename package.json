@@ -5,6 +5,7 @@
   "main": "Main.ts",
   "scripts": {
     "build": "tsc && copyfiles -u 1 app/**/*.html app/**/*.css app/**/*.py dist/",
+    "clean": "rm -rf dist && find . -type d -name '__pycache__' -exec rm -rf {} \\;",
     "start": "electron dist/App.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
